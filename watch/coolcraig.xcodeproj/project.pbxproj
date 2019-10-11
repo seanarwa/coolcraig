@@ -1,0 +1,569 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		26699265234FF6420028C239 /* coolcraig WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 26699264234FF6420028C239 /* coolcraig WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2669926B234FF6420028C239 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26699269234FF6420028C239 /* Interface.storyboard */; };
+		2669926D234FF6490028C239 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2669926C234FF6490028C239 /* Assets.xcassets */; };
+		26699274234FF64A0028C239 /* coolcraig WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 26699273234FF64A0028C239 /* coolcraig WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		26699279234FF64A0028C239 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26699278234FF64A0028C239 /* ContentView.swift */; };
+		2669927B234FF64A0028C239 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2669927A234FF64A0028C239 /* HostingController.swift */; };
+		2669927D234FF64A0028C239 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2669927C234FF64A0028C239 /* ExtensionDelegate.swift */; };
+		2669927F234FF64A0028C239 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2669927E234FF64A0028C239 /* NotificationController.swift */; };
+		26699281234FF64A0028C239 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26699280234FF64A0028C239 /* NotificationView.swift */; };
+		26699283234FF64D0028C239 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26699282234FF64D0028C239 /* Assets.xcassets */; };
+		26699286234FF64D0028C239 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26699285234FF64D0028C239 /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		26699266234FF6420028C239 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2669925A234FF6420028C239 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26699263234FF6420028C239;
+			remoteInfo = "coolcraig WatchKit App";
+		};
+		26699275234FF64A0028C239 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2669925A234FF6420028C239 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26699272234FF64A0028C239;
+			remoteInfo = "coolcraig WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2669928E234FF64D0028C239 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				26699274234FF64A0028C239 /* coolcraig WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26699292234FF64D0028C239 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				26699265234FF6420028C239 /* coolcraig WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		26699260234FF6420028C239 /* coolcraig.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = coolcraig.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		26699264234FF6420028C239 /* coolcraig WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "coolcraig WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2669926A234FF6420028C239 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		2669926C234FF6490028C239 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2669926E234FF6490028C239 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26699273234FF64A0028C239 /* coolcraig WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "coolcraig WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		26699278234FF64A0028C239 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2669927A234FF64A0028C239 /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		2669927C234FF64A0028C239 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		2669927E234FF64A0028C239 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		26699280234FF64A0028C239 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		26699282234FF64D0028C239 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		26699285234FF64D0028C239 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		26699287234FF64D0028C239 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26699288234FF64D0028C239 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		26699270234FF64A0028C239 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		26699259234FF6420028C239 = {
+			isa = PBXGroup;
+			children = (
+				26699268234FF6420028C239 /* coolcraig WatchKit App */,
+				26699277234FF64A0028C239 /* coolcraig WatchKit Extension */,
+				26699261234FF6420028C239 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		26699261234FF6420028C239 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				26699260234FF6420028C239 /* coolcraig.app */,
+				26699264234FF6420028C239 /* coolcraig WatchKit App.app */,
+				26699273234FF64A0028C239 /* coolcraig WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		26699268234FF6420028C239 /* coolcraig WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				26699269234FF6420028C239 /* Interface.storyboard */,
+				2669926C234FF6490028C239 /* Assets.xcassets */,
+				2669926E234FF6490028C239 /* Info.plist */,
+			);
+			path = "coolcraig WatchKit App";
+			sourceTree = "<group>";
+		};
+		26699277234FF64A0028C239 /* coolcraig WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				26699278234FF64A0028C239 /* ContentView.swift */,
+				2669927A234FF64A0028C239 /* HostingController.swift */,
+				2669927C234FF64A0028C239 /* ExtensionDelegate.swift */,
+				2669927E234FF64A0028C239 /* NotificationController.swift */,
+				26699280234FF64A0028C239 /* NotificationView.swift */,
+				26699282234FF64D0028C239 /* Assets.xcassets */,
+				26699287234FF64D0028C239 /* Info.plist */,
+				26699288234FF64D0028C239 /* PushNotificationPayload.apns */,
+				26699284234FF64D0028C239 /* Preview Content */,
+			);
+			path = "coolcraig WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		26699284234FF64D0028C239 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				26699285234FF64D0028C239 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2669925F234FF6420028C239 /* coolcraig */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26699293234FF64D0028C239 /* Build configuration list for PBXNativeTarget "coolcraig" */;
+			buildPhases = (
+				2669925E234FF6420028C239 /* Resources */,
+				26699292234FF64D0028C239 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				26699267234FF6420028C239 /* PBXTargetDependency */,
+			);
+			name = coolcraig;
+			productName = coolcraig;
+			productReference = 26699260234FF6420028C239 /* coolcraig.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		26699263234FF6420028C239 /* coolcraig WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2669928F234FF64D0028C239 /* Build configuration list for PBXNativeTarget "coolcraig WatchKit App" */;
+			buildPhases = (
+				26699262234FF6420028C239 /* Resources */,
+				2669928E234FF64D0028C239 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				26699276234FF64A0028C239 /* PBXTargetDependency */,
+			);
+			name = "coolcraig WatchKit App";
+			productName = "coolcraig WatchKit App";
+			productReference = 26699264234FF6420028C239 /* coolcraig WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		26699272234FF64A0028C239 /* coolcraig WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2669928B234FF64D0028C239 /* Build configuration list for PBXNativeTarget "coolcraig WatchKit Extension" */;
+			buildPhases = (
+				2669926F234FF64A0028C239 /* Sources */,
+				26699270234FF64A0028C239 /* Frameworks */,
+				26699271234FF64A0028C239 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "coolcraig WatchKit Extension";
+			productName = "coolcraig WatchKit Extension";
+			productReference = 26699273234FF64A0028C239 /* coolcraig WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2669925A234FF6420028C239 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					2669925F234FF6420028C239 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					26699263234FF6420028C239 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					26699272234FF64A0028C239 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+				};
+			};
+			buildConfigurationList = 2669925D234FF6420028C239 /* Build configuration list for PBXProject "coolcraig" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 26699259234FF6420028C239;
+			productRefGroup = 26699261234FF6420028C239 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2669925F234FF6420028C239 /* coolcraig */,
+				26699263234FF6420028C239 /* coolcraig WatchKit App */,
+				26699272234FF64A0028C239 /* coolcraig WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2669925E234FF6420028C239 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26699262234FF6420028C239 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2669926D234FF6490028C239 /* Assets.xcassets in Resources */,
+				2669926B234FF6420028C239 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26699271234FF64A0028C239 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26699286234FF64D0028C239 /* Preview Assets.xcassets in Resources */,
+				26699283234FF64D0028C239 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2669926F234FF64A0028C239 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2669927B234FF64A0028C239 /* HostingController.swift in Sources */,
+				26699279234FF64A0028C239 /* ContentView.swift in Sources */,
+				2669927F234FF64A0028C239 /* NotificationController.swift in Sources */,
+				2669927D234FF64A0028C239 /* ExtensionDelegate.swift in Sources */,
+				26699281234FF64A0028C239 /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		26699267234FF6420028C239 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 26699263234FF6420028C239 /* coolcraig WatchKit App */;
+			targetProxy = 26699266234FF6420028C239 /* PBXContainerItemProxy */;
+		};
+		26699276234FF64A0028C239 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 26699272234FF64A0028C239 /* coolcraig WatchKit Extension */;
+			targetProxy = 26699275234FF64A0028C239 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		26699269234FF6420028C239 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2669926A234FF6420028C239 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		26699289234FF64D0028C239 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2669928A234FF64D0028C239 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2669928C234FF64D0028C239 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"coolcraig WatchKit Extension/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "coolcraig WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.seanchang.coolcraig.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		2669928D234FF64D0028C239 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"coolcraig WatchKit Extension/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "coolcraig WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.seanchang.coolcraig.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		26699290234FF64D0028C239 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = coolcraig_WatchKit_Extension;
+				INFOPLIST_FILE = "coolcraig WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = me.seanchang.coolcraig.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		26699291234FF64D0028C239 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = coolcraig_WatchKit_Extension;
+				INFOPLIST_FILE = "coolcraig WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = me.seanchang.coolcraig.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		26699294234FF64D0028C239 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.seanchang.coolcraig;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		26699295234FF64D0028C239 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.seanchang.coolcraig;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2669925D234FF6420028C239 /* Build configuration list for PBXProject "coolcraig" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26699289234FF64D0028C239 /* Debug */,
+				2669928A234FF64D0028C239 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2669928B234FF64D0028C239 /* Build configuration list for PBXNativeTarget "coolcraig WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2669928C234FF64D0028C239 /* Debug */,
+				2669928D234FF64D0028C239 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2669928F234FF64D0028C239 /* Build configuration list for PBXNativeTarget "coolcraig WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26699290234FF64D0028C239 /* Debug */,
+				26699291234FF64D0028C239 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26699293234FF64D0028C239 /* Build configuration list for PBXNativeTarget "coolcraig" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26699294234FF64D0028C239 /* Debug */,
+				26699295234FF64D0028C239 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2669925A234FF6420028C239 /* Project object */;
+}
