@@ -11,13 +11,12 @@
 		2669926B234FF6420028C239 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26699269234FF6420028C239 /* Interface.storyboard */; };
 		2669926D234FF6490028C239 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2669926C234FF6490028C239 /* Assets.xcassets */; };
 		26699274234FF64A0028C239 /* coolcraig WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 26699273234FF64A0028C239 /* coolcraig WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		26699279234FF64A0028C239 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26699278234FF64A0028C239 /* ContentView.swift */; };
-		2669927B234FF64A0028C239 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2669927A234FF64A0028C239 /* HostingController.swift */; };
 		2669927D234FF64A0028C239 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2669927C234FF64A0028C239 /* ExtensionDelegate.swift */; };
 		2669927F234FF64A0028C239 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2669927E234FF64A0028C239 /* NotificationController.swift */; };
 		26699281234FF64A0028C239 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26699280234FF64A0028C239 /* NotificationView.swift */; };
 		26699283234FF64D0028C239 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26699282234FF64D0028C239 /* Assets.xcassets */; };
 		26699286234FF64D0028C239 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26699285234FF64D0028C239 /* Preview Assets.xcassets */; };
+		2692177A2356A45C007A0A32 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269217792356A45C007A0A32 /* InterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,8 +68,6 @@
 		2669926C234FF6490028C239 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2669926E234FF6490028C239 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26699273234FF64A0028C239 /* coolcraig WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "coolcraig WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		26699278234FF64A0028C239 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		2669927A234FF64A0028C239 /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
 		2669927C234FF64A0028C239 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		2669927E234FF64A0028C239 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		26699280234FF64A0028C239 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
@@ -78,6 +75,7 @@
 		26699285234FF64D0028C239 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		26699287234FF64D0028C239 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26699288234FF64D0028C239 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		269217792356A45C007A0A32 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,8 +121,6 @@
 		26699277234FF64A0028C239 /* coolcraig WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				26699278234FF64A0028C239 /* ContentView.swift */,
-				2669927A234FF64A0028C239 /* HostingController.swift */,
 				2669927C234FF64A0028C239 /* ExtensionDelegate.swift */,
 				2669927E234FF64A0028C239 /* NotificationController.swift */,
 				26699280234FF64A0028C239 /* NotificationView.swift */,
@@ -132,6 +128,7 @@
 				26699287234FF64D0028C239 /* Info.plist */,
 				26699288234FF64D0028C239 /* PushNotificationPayload.apns */,
 				26699284234FF64D0028C239 /* Preview Content */,
+				269217792356A45C007A0A32 /* InterfaceController.swift */,
 			);
 			path = "coolcraig WatchKit Extension";
 			sourceTree = "<group>";
@@ -271,9 +268,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2669927B234FF64A0028C239 /* HostingController.swift in Sources */,
-				26699279234FF64A0028C239 /* ContentView.swift in Sources */,
 				2669927F234FF64A0028C239 /* NotificationController.swift in Sources */,
+				2692177A2356A45C007A0A32 /* InterfaceController.swift in Sources */,
 				2669927D234FF64A0028C239 /* ExtensionDelegate.swift in Sources */,
 				26699281234FF64A0028C239 /* NotificationView.swift in Sources */,
 			);

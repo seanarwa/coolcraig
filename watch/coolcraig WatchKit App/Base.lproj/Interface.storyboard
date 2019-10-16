@@ -1,19 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14815" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="NBu-mt-KyX">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="15400" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="OiE-VM-9BK">
     <device id="watch38"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14770"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14621"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="15400"/>
     </dependencies>
     <scenes>
-        <!--Hosting Controller-->
-        <scene sceneID="RUd-og-cv4">
-            <objects>
-                <hostingController id="NBu-mt-KyX" customClass="HostingController" 
-                customModuleProvider="target"/>                
-            </objects>
-            <point key="canvasLocation" x="187" y="141"/>
-        </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
             <objects>
@@ -30,13 +22,38 @@
             </objects>
             <point key="canvasLocation" x="187" y="462"/>
         </scene>
-        <!--Notification Hosting Controller-->
+        <!--Notification Controller-->
         <scene sceneID="Niz-AI-uX2">
             <objects>
-                <controller id="eXb-UN-Cd0" customClass="NotificationController"
-                customModuleProvider="target"/>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="coolcraig_WatchKit_App" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="488" y="462"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="o4H-oo-0tV">
+            <objects>
+                <controller hidesWhenLoading="NO" id="OiE-VM-9BK" customClass="InterfaceController" customModule="coolcraig_WatchKit_Extension">
+                    <items>
+                        <group width="1" height="143" alignment="left" layout="vertical" id="DU8-a3-wI6">
+                            <items>
+                                <label alignment="left" text="Tasks" id="kdy-yT-dhi"/>
+                                <table alignment="left" id="jDA-3q-XZB">
+                                    <items>
+                                        <tableRow id="hyR-DN-0vO">
+                                            <group key="rootItem" width="1" alignment="left" id="9FD-gj-Df8">
+                                                <items>
+                                                    <label alignment="center" verticalAlignment="center" text="Label" id="lq9-xJ-je7"/>
+                                                </items>
+                                            </group>
+                                        </tableRow>
+                                    </items>
+                                </table>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="188" y="146"/>
         </scene>
     </scenes>
 </document>
