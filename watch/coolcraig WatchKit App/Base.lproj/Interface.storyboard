@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="15400" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="OiE-VM-9BK">
-    <device id="watch38"/>
+    <device id="watch40"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="15400"/>
@@ -29,31 +29,167 @@
             </objects>
             <point key="canvasLocation" x="488" y="462"/>
         </scene>
-        <!--Interface Controller-->
+        <!--Main Interface Controller-->
         <scene sceneID="o4H-oo-0tV">
             <objects>
-                <controller hidesWhenLoading="NO" id="OiE-VM-9BK" customClass="InterfaceController" customModule="coolcraig_WatchKit_Extension">
+                <controller hidesWhenLoading="NO" id="OiE-VM-9BK" customClass="MainInterfaceController" customModule="coolcraig_WatchKit_Extension">
                     <items>
                         <group width="1" height="143" alignment="left" layout="vertical" id="DU8-a3-wI6">
                             <items>
                                 <label alignment="left" text="Tasks" id="kdy-yT-dhi"/>
-                                <table alignment="left" id="jDA-3q-XZB">
-                                    <items>
-                                        <tableRow id="hyR-DN-0vO">
-                                            <group key="rootItem" width="1" alignment="left" id="9FD-gj-Df8">
-                                                <items>
-                                                    <label alignment="center" verticalAlignment="center" text="Label" id="lq9-xJ-je7"/>
-                                                </items>
-                                            </group>
-                                        </tableRow>
-                                    </items>
-                                </table>
+                                <button width="1" height="38" alignment="left" title="+ Add Task" id="t6t-MZ-l2c">
+                                    <color key="backgroundColor" red="0.0" green="0.46529688073223285" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <connections>
+                                        <action selector="addTaskButton" destination="OiE-VM-9BK" id="lgr-wv-Fpl"/>
+                                        <segue destination="74Y-mk-0OA" kind="push" id="DMb-7U-DtS"/>
+                                    </connections>
+                                </button>
+                                <button width="1" alignment="left" title="Button" id="YPy-jn-Mg3">
+                                    <connections>
+                                        <segue destination="0Y6-Vn-PQw" kind="push" id="kkM-YI-44x"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="addTaskButton" destination="t6t-MZ-l2c" id="GTQ-1v-MYz"/>
+                        <segue destination="tym-3c-B6o" kind="relationship" relationship="nextPage" id="04d-lZ-DPw"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="187" y="128"/>
+        </scene>
+        <!--Notification Settings Interface Controller-->
+        <scene sceneID="MDU-Uh-pfE">
+            <objects>
+                <controller id="b07-eC-enm" customClass="NotificationSettingsInterfaceController" customModule="coolcraig_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" id="pcs-6c-2SR">
+                            <items>
+                                <label alignment="left" text="Push Notifications" id="pqb-yU-hlJ">
+                                    <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                                </label>
+                                <switch width="1" alignment="left" value="YES" title="Show Text" id="v92-37-Z1V">
+                                    <fontDescription key="font" type="system" pointSize="14"/>
+                                </switch>
+                                <switch width="1" alignment="left" value="YES" title="Vibrate" id="tUU-P5-451">
+                                    <fontDescription key="font" type="system" pointSize="14"/>
+                                </switch>
+                                <label alignment="left" text="Messages" id="JDr-Vm-KV3">
+                                    <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                                </label>
+                                <switch width="1" alignment="left" value="YES" title="Show Goals" id="2Nc-xd-h5i">
+                                    <fontDescription key="font" type="system" pointSize="14"/>
+                                </switch>
+                                <switch width="1" alignment="left" title="Mute All" id="qbU-f3-gwP">
+                                    <fontDescription key="font" type="system" pointSize="14"/>
+                                </switch>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <segue destination="smu-Ns-ot0" kind="relationship" relationship="nextPage" id="RtU-iF-Lkf"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="736" y="128"/>
+        </scene>
+        <!--Personal Settings Interface Controller-->
+        <scene sceneID="FTP-3X-u93">
+            <objects>
+                <controller id="smu-Ns-ot0" customClass="PersonalSettingsInterfaceController" customModule="coolcraig_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="Nhm-qs-Age">
+                            <items>
+                                <label alignment="left" text="Peter Craig" id="zOv-ct-SdD"/>
                             </items>
                         </group>
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="188" y="146"/>
+            <point key="canvasLocation" x="1001" y="128"/>
+        </scene>
+        <!--Rewards Interface Controller-->
+        <scene sceneID="fwA-cV-KEV">
+            <objects>
+                <controller id="tym-3c-B6o" customClass="RewardsInterfaceController" customModule="coolcraig_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" id="Awg-xo-KKU">
+                            <items>
+                                <label alignment="left" text="Rewards" id="3Km-T4-agM"/>
+                                <label alignment="center" text="24" id="taz-RU-oag">
+                                    <fontDescription key="font" type="system" pointSize="48"/>
+                                </label>
+                                <label alignment="center" text="Points" id="f12-rR-N8H"/>
+                            </items>
+                        </group>
+                        <button width="1" height="38" alignment="left" verticalAlignment="bottom" title="Redeem" id="DGW-yy-wGO">
+                            <color key="backgroundColor" red="0.0" green="0.46529688070000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <action selector="addTaskButton" destination="OiE-VM-9BK" id="WgD-JN-GZ0"/>
+                                <segue destination="TEv-XY-4k6" kind="push" id="sbI-tA-BCl"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <segue destination="b07-eC-enm" kind="relationship" relationship="nextPage" id="H7u-Kc-qkd"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="467" y="128"/>
+        </scene>
+        <!--Show Task Interface Controller-->
+        <scene sceneID="Tz2-an-bzJ">
+            <objects>
+                <controller id="0Y6-Vn-PQw" customClass="ShowTaskInterfaceController" customModule="coolcraig_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="MFu-Qg-ite">
+                            <items>
+                                <imageView width="50" height="50" alignment="left" image="photo" catalog="system" id="MTd-vO-rTz"/>
+                                <label alignment="left" text="Sample Task" id="qFx-bH-lFr"/>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="467" y="-199"/>
+        </scene>
+        <!--Redeem Rewards Interface Controller-->
+        <scene sceneID="0fL-lp-3yR">
+            <objects>
+                <controller id="TEv-XY-4k6" customClass="RedeemRewardsInterfaceController" customModule="coolcraig_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="yLh-Xd-cHy">
+                            <items>
+                                <group width="1" alignment="left" id="bX5-CC-KJq">
+                                    <items>
+                                        <button width="1" alignment="left" title="Button" id="Bt0-au-FmP"/>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="736" y="-199"/>
+        </scene>
+        <!--New Task Interface Controller-->
+        <scene sceneID="hln-j7-iyk">
+            <objects>
+                <controller id="74Y-mk-0OA" customClass="NewTaskInterfaceController" customModule="coolcraig_WatchKit_Extension">
+                    <items>
+                        <picker width="1" height="1" alignment="left" id="A9m-so-2Jw"/>
+                    </items>
+                    <connections>
+                        <outlet property="newTaskPicker" destination="A9m-so-2Jw" id="D4C-zf-J6U"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="187" y="-199"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="photo" catalog="system" width="64" height="46"/>
+    </resources>
 </document>

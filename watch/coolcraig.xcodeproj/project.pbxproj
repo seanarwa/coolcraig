@@ -16,7 +16,14 @@
 		26699281234FF64A0028C239 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26699280234FF64A0028C239 /* NotificationView.swift */; };
 		26699283234FF64D0028C239 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26699282234FF64D0028C239 /* Assets.xcassets */; };
 		26699286234FF64D0028C239 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26699285234FF64D0028C239 /* Preview Assets.xcassets */; };
-		2692177A2356A45C007A0A32 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269217792356A45C007A0A32 /* InterfaceController.swift */; };
+		D2676841235EB5670007F692 /* NewTaskInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2676840235EB5670007F692 /* NewTaskInterfaceController.swift */; };
+		D2676843235EB57B0007F692 /* ShowTaskInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2676842235EB57B0007F692 /* ShowTaskInterfaceController.swift */; };
+		D2676845235EB5BB0007F692 /* MainInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2676844235EB5BB0007F692 /* MainInterfaceController.swift */; };
+		D2676847235EBDB10007F692 /* RewardsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2676846235EBDB10007F692 /* RewardsInterfaceController.swift */; };
+		D2676849235EBDC40007F692 /* NotificationSettingsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2676848235EBDC40007F692 /* NotificationSettingsInterfaceController.swift */; };
+		D267684B235EBDD50007F692 /* PersonalSettingsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D267684A235EBDD50007F692 /* PersonalSettingsInterfaceController.swift */; };
+		D2676851235ECCE20007F692 /* TaskTableRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2676850235ECCE20007F692 /* TaskTableRowController.swift */; };
+		D26768532360C87C0007F692 /* RedeemRewardsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26768522360C87C0007F692 /* RedeemRewardsInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,7 +82,14 @@
 		26699285234FF64D0028C239 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		26699287234FF64D0028C239 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26699288234FF64D0028C239 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		269217792356A45C007A0A32 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		D2676840235EB5670007F692 /* NewTaskInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskInterfaceController.swift; sourceTree = "<group>"; };
+		D2676842235EB57B0007F692 /* ShowTaskInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowTaskInterfaceController.swift; sourceTree = "<group>"; };
+		D2676844235EB5BB0007F692 /* MainInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInterfaceController.swift; sourceTree = "<group>"; };
+		D2676846235EBDB10007F692 /* RewardsInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsInterfaceController.swift; sourceTree = "<group>"; };
+		D2676848235EBDC40007F692 /* NotificationSettingsInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSettingsInterfaceController.swift; sourceTree = "<group>"; };
+		D267684A235EBDD50007F692 /* PersonalSettingsInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalSettingsInterfaceController.swift; sourceTree = "<group>"; };
+		D2676850235ECCE20007F692 /* TaskTableRowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableRowController.swift; sourceTree = "<group>"; };
+		D26768522360C87C0007F692 /* RedeemRewardsInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedeemRewardsInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,7 +142,14 @@
 				26699287234FF64D0028C239 /* Info.plist */,
 				26699288234FF64D0028C239 /* PushNotificationPayload.apns */,
 				26699284234FF64D0028C239 /* Preview Content */,
-				269217792356A45C007A0A32 /* InterfaceController.swift */,
+				D2676840235EB5670007F692 /* NewTaskInterfaceController.swift */,
+				D2676842235EB57B0007F692 /* ShowTaskInterfaceController.swift */,
+				D2676844235EB5BB0007F692 /* MainInterfaceController.swift */,
+				D2676846235EBDB10007F692 /* RewardsInterfaceController.swift */,
+				D2676848235EBDC40007F692 /* NotificationSettingsInterfaceController.swift */,
+				D267684A235EBDD50007F692 /* PersonalSettingsInterfaceController.swift */,
+				D2676850235ECCE20007F692 /* TaskTableRowController.swift */,
+				D26768522360C87C0007F692 /* RedeemRewardsInterfaceController.swift */,
 			);
 			path = "coolcraig WatchKit Extension";
 			sourceTree = "<group>";
@@ -268,10 +289,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2676845235EB5BB0007F692 /* MainInterfaceController.swift in Sources */,
+				D26768532360C87C0007F692 /* RedeemRewardsInterfaceController.swift in Sources */,
+				D2676847235EBDB10007F692 /* RewardsInterfaceController.swift in Sources */,
+				D267684B235EBDD50007F692 /* PersonalSettingsInterfaceController.swift in Sources */,
 				2669927F234FF64A0028C239 /* NotificationController.swift in Sources */,
-				2692177A2356A45C007A0A32 /* InterfaceController.swift in Sources */,
+				D2676841235EB5670007F692 /* NewTaskInterfaceController.swift in Sources */,
 				2669927D234FF64A0028C239 /* ExtensionDelegate.swift in Sources */,
+				D2676851235ECCE20007F692 /* TaskTableRowController.swift in Sources */,
+				D2676849235EBDC40007F692 /* NotificationSettingsInterfaceController.swift in Sources */,
 				26699281234FF64A0028C239 /* NotificationView.swift in Sources */,
+				D2676843235EB57B0007F692 /* ShowTaskInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
