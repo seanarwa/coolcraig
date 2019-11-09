@@ -1,15 +1,15 @@
 //
-//  PersonalSettingsInterfaceController.swift
+//  RewardsHome.swift
 //  coolcraig WatchKit Extension
 //
-//  Created by InfProjCourse1 on 10/21/19.
+//  Created by InfProjCourse1 on 10/31/19.
 //
 
 import WatchKit
 import Foundation
 
 
-class PersonalSettingsInterfaceController: WKInterfaceController {
+class RewardsHome: WKInterfaceController {
 
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)

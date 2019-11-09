@@ -1,26 +1,23 @@
 //
-//  MainInterfaceController.swift
+//  WelcomeInterfaceController.swift
 //  coolcraig WatchKit Extension
 //
-//  Created by InfProjCourse1 on 10/21/19.
+//  Created by InfProjCourse1 on 11/2/19.
 //
 
 import WatchKit
 import Foundation
 
-class MainInterfaceController: WKInterfaceController {
-    
-    @IBOutlet weak var taskTable: WKInterfaceTable!
+
+class WelcomeInterfaceController: WKInterfaceController {
+
+    @IBOutlet weak var displayNameLabel: WKInterfaceLabel!
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
+        
         // Configure interface objects here.
-//        taskTable.setNumberOfRows(10, withRowType: "Row")
-//        
-//        for i in 0 ..< 10 {
-//            guard let row = taskTable.rowController(at: i) as? TaskTableRowController else { continue }
-//            row.label.setText("Row \(i+1)")
-//        }
+        displayNameLabel.setText(Utils.getKey(key: "userEmail") as? String)
     }
 
     override func willActivate() {
@@ -32,9 +29,13 @@ class MainInterfaceController: WKInterfaceController {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
     }
+
+    @IBAction func onNextButtonClick() {
+        Utils.navigateToPageAndPop(pageNames: ["HomeInterfaceController","RewardsInterfaceController"])
+    }
     
-    @IBAction func addTaskButton() {
-        
+    @IBAction func onNotYouButtonClick() {
+        Utils.navigateToPageAndPop(pageNames: ["LoginInterfaceController"])
     }
     
 }

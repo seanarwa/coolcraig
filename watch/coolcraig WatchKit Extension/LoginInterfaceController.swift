@@ -1,36 +1,27 @@
 //
-//  NewTaskInterfaceController.swift
+//  LoginInterfaceController.swift
 //  coolcraig WatchKit Extension
 //
-//  Created by InfProjCourse1 on 10/21/19.
+//  Created by InfProjCourse1 on 11/2/19.
 //
 
 import WatchKit
 import Foundation
 
 
-class NewTaskInterfaceController: WKInterfaceController {
+class LoginInterfaceController: WKInterfaceController {
     
-    @IBOutlet weak var categoryPicker: WKInterfacePicker!
-    @IBOutlet weak var goalPicker: WKInterfacePicker!
-    @IBOutlet weak var addButton: WKInterfaceButton!
-    
-    let categories = ["School", "Health", "Social", "Others"]
-    let goals = [["Be focused in class"],["Take a stroll","Take a deep breath"],["Say something nice to someone"],["the other goals"]]
-    let pickerData = ["Do Something Extra", "Answer a Survey", "Do a Chore", "Be Social", "Behave", "Sleep", "Exercise"]
-    let defaultImage = UIImage(systemName: "photo")
+    var email: String = ""
+    var password: String = ""
 
+    @IBOutlet weak var emailTextField: WKInterfaceTextField!
+    @IBOutlet weak var passwordTextField: WKInterfaceTextField!
+    @IBOutlet weak var signInButton: WKInterfaceButton!
+    
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
-        categoryPicker.setItems(categories.map {
-            let pickerItem = WKPickerItem()
-            pickerItem.title = $0
-            pickerItem.caption = "Category"
-            return pickerItem
-        })
-        setGoalsByIndex(0)
-        
+        // Configure interface objects here.
     }
 
     override func willActivate() {
@@ -42,30 +33,18 @@ class NewTaskInterfaceController: WKInterfaceController {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
     }
-
-    @IBAction func onCategorySelect(_ value: Int) {
-        setGoalsByIndex(value)
-    }
     
-    func setGoalsByIndex(_ index: Int) {
-        goalPicker.setItems(goals[index].map {
-            let pickerItem = WKPickerItem()
-            pickerItem.title = $0
-            pickerItem.caption = "Goal"
-            return pickerItem
-        })
-    }
-    
-    @IBAction func onAddButtonClick() {
+    func userSignIn(email: String, password: String) {
         
         setLoading(isLoading: true)
         
-        let idToken = Utils.getKey(key: "userIdToken")
-        
-        if let url = URL(string: "https://coolcraig-bdd39.firebaseio.com/goals.json?auth=\(idToken)") {
+        if let url = URL(string: "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=\(Environment.FIREBASE_API_KEY)") {
+            
             
             let json: [String:Any] = [
-                "user_id": Utils.getKey(key: "userId")
+                "email": email,
+                "password": password,
+                "returnSecureToken": true
             ]
             let jsonData = try? JSONSerialization.data(withJSONObject: json)
             var request = URLRequest(url: url)
@@ -78,10 +57,15 @@ class NewTaskInterfaceController: WKInterfaceController {
                 
                 if let data = data {
                     let responseJSON = try? JSONSerialization.jsonObject(with: data, options: [])
-                    print(responseJSON)
                     if let responseJSON = responseJSON as? [String: Any] {
+                        print(responseJSON)
                         if responseJSON["error"] == nil {
                             success = true
+                            Utils.storeKey(key: "userDisplayName", value: responseJSON["displayName"])
+                            Utils.storeKey(key: "userIdToken", value: responseJSON["idToken"])
+                            Utils.storeKey(key: "userRefreshToken", value: responseJSON["refreshToken"])
+                            Utils.storeKey(key: "userEmail", value: responseJSON["email"])
+                            Utils.deleteKey(key: "userId")
                         }
                     }
                 } else {
@@ -90,7 +74,7 @@ class NewTaskInterfaceController: WKInterfaceController {
                 
                 DispatchQueue.main.async {
                     if(success) {
-                        self.pop()
+                        Utils.navigateToPageAndPop(pageNames: ["WelcomeInterfaceController"])
                     }
                     self.setLoading(isLoading: false)
                 }
@@ -98,16 +82,27 @@ class NewTaskInterfaceController: WKInterfaceController {
             }.resume()
             
         }
-        
     }
     
     func setLoading(isLoading: Bool) {
-        addButton.setEnabled(!isLoading)
+        signInButton.setEnabled(!isLoading)
         if(isLoading) {
             
         } else {
             
         }
+    }
+
+    @IBAction func onEmailTextInput(_ value: NSString?) {
+        email = (value == nil) ? "" : "\(value)"
+    }
+    
+    @IBAction func onPasswordTextInput(_ value: NSString?) {
+        password = (value == nil) ? "" : "\(value)"
+    }
+    
+    @IBAction func onSignInButtonClick() {
+        userSignIn(email: email, password: password)
     }
     
 }

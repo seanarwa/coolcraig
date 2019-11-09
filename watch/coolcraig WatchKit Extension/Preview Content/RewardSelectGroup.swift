@@ -1,15 +1,15 @@
 //
-//  ShowTaskInterfaceController.swift
+//  RewardSelectGroup.swift
 //  coolcraig WatchKit Extension
 //
-//  Created by InfProjCourse1 on 10/21/19.
+//  Created by InfProjCourse1 on 10/31/19.
 //
 
 import WatchKit
 import Foundation
 
 
-class ShowTaskInterfaceController: WKInterfaceController {
+class RewardSelectGroup: WKInterfaceController {
 
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)

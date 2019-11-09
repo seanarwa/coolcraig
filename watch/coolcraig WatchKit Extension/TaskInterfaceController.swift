@@ -1,16 +1,18 @@
 //
-//  NotificationSettingsInterfaceController.swift
+//  TaskInterfaceController.swift
 //  coolcraig WatchKit Extension
 //
-//  Created by InfProjCourse1 on 10/21/19.
+//  Created by InfProjCourse1 on 11/2/19.
 //
 
 import WatchKit
 import Foundation
 
 
-class NotificationSettingsInterfaceController: WKInterfaceController {
+class TaskInterfaceController: WKInterfaceController {
 
+    @IBOutlet var taskLabel: WKInterfaceLabel!
+    
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
