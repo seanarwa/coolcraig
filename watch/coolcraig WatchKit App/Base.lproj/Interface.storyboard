@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="15400" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="wAA-mm-COi">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="15400" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5DF-8f-onT">
     <device id="watch40"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
@@ -291,7 +291,7 @@
             <objects>
                 <controller identifier="RewardsInterfaceController" id="wrK-iH-5dV">
                     <items>
-                        <imageView width="98" height="98" alignment="center" image="gift" catalog="system" id="tby-i8-ZvB">
+                        <imageView width="90" height="90" alignment="center" image="gift" catalog="system" id="tby-i8-ZvB">
                             <color key="tintColor" red="0.89803921568627454" green="0.74901960784313726" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         </imageView>
                         <group alignment="left" id="WDQ-Ak-IlL">
@@ -317,10 +317,10 @@
             </objects>
             <point key="canvasLocation" x="636" y="176"/>
         </scene>
-        <!--Interface Controller-->
+        <!--MonthlyReportInterfaceController-->
         <scene sceneID="QWz-xX-RfL">
             <objects>
-                <controller id="wAA-mm-COi">
+                <controller identifier="MonthlyReportInterfaceController" id="wAA-mm-COi" customClass="MonthlyReportInterfaceController" customModule="coolcraig_WatchKit_Extension">
                     <items>
                         <label alignment="center" text="Current month report " id="9hV-dD-1oL">
                             <color key="textColor" red="0.20382404330000001" green="0.46806800370000001" blue="0.96475380659999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -440,10 +440,10 @@
             </objects>
             <point key="canvasLocation" x="982" y="269"/>
         </scene>
-        <!--Interface Controller-->
+        <!--ProfileInterfaceController-->
         <scene sceneID="bu5-i5-sot">
             <objects>
-                <controller id="fgq-8D-l9E">
+                <controller identifier="ProfileInterfaceController" id="fgq-8D-l9E" customClass="ProfileInterfaceController" customModule="coolcraig_WatchKit_Extension">
                     <items>
                         <button width="1" alignment="left" title="Join new group" id="ppk-xH-Vrl">
                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -487,10 +487,10 @@
             </objects>
             <point key="canvasLocation" x="1338" y="236"/>
         </scene>
-        <!--Interface Controller-->
+        <!--SettingsInterfaceController-->
         <scene sceneID="WYt-Fy-aRe">
             <objects>
-                <controller id="iKv-tC-heX">
+                <controller identifier="SettingsInterfaceController" id="iKv-tC-heX" customClass="SettingsInterfaceController" customModule="coolcraig_WatchKit_Extension">
                     <items>
                         <label alignment="left" text="Display" id="5R5-Mt-vVv"/>
                         <switch width="1" alignment="left" value="YES" title="Text" id="WfC-sk-4TE"/>
