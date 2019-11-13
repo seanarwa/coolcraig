@@ -4,6 +4,7 @@ DerivedData
 build.xcarchive
 
 ## Various settings
+Config.xcconfig
 *.pbxuser
 !default.pbxuser
 *.mode1v3
