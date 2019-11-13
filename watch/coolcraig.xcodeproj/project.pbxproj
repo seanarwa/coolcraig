@@ -28,6 +28,9 @@
 		D20F7120236E56DE0077F1F2 /* TaskListTableRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20F711F236E56DE0077F1F2 /* TaskListTableRowController.swift */; };
 		D23B04E32371E63500CF1138 /* EntrypointInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23B04E22371E63500CF1138 /* EntrypointInterfaceController.swift */; };
 		D23B04E623721DF900CF1138 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23B04E523721DF900CF1138 /* Configuration.swift */; };
+		D23B04ED237CA0AE00CF1138 /* MonthlyReportInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23B04EC237CA0AE00CF1138 /* MonthlyReportInterfaceController.swift */; };
+		D23B04EF237CA0EF00CF1138 /* ProfileInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23B04EE237CA0EF00CF1138 /* ProfileInterfaceController.swift */; };
+		D23B04F1237CA10E00CF1138 /* SettingsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23B04F0237CA10E00CF1138 /* SettingsInterfaceController.swift */; };
 		D2676841235EB5670007F692 /* NewTaskInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2676840235EB5670007F692 /* NewTaskInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
@@ -98,8 +101,11 @@
 		D20F711D236E4F070077F1F2 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		D20F711F236E56DE0077F1F2 /* TaskListTableRowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListTableRowController.swift; sourceTree = "<group>"; };
 		D23B04E22371E63500CF1138 /* EntrypointInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntrypointInterfaceController.swift; sourceTree = "<group>"; };
-		D23B04E423721D5300CF1138 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		D23B04E523721DF900CF1138 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		D23B04E9237C9E5900CF1138 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		D23B04EC237CA0AE00CF1138 /* MonthlyReportInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyReportInterfaceController.swift; sourceTree = "<group>"; };
+		D23B04EE237CA0EF00CF1138 /* ProfileInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInterfaceController.swift; sourceTree = "<group>"; };
+		D23B04F0237CA10E00CF1138 /* SettingsInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsInterfaceController.swift; sourceTree = "<group>"; };
 		D2676840235EB5670007F692 /* NewTaskInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -139,7 +145,7 @@
 				26699269234FF6420028C239 /* Interface.storyboard */,
 				2669926C234FF6490028C239 /* Assets.xcassets */,
 				2669926E234FF6490028C239 /* Info.plist */,
-				D23B04E423721D5300CF1138 /* Config.xcconfig */,
+				D23B04E9237C9E5900CF1138 /* Config.xcconfig */,
 			);
 			path = "coolcraig WatchKit App";
 			sourceTree = "<group>";
@@ -165,6 +171,9 @@
 				D20F711F236E56DE0077F1F2 /* TaskListTableRowController.swift */,
 				D23B04E22371E63500CF1138 /* EntrypointInterfaceController.swift */,
 				D23B04E523721DF900CF1138 /* Configuration.swift */,
+				D23B04EC237CA0AE00CF1138 /* MonthlyReportInterfaceController.swift */,
+				D23B04EE237CA0EF00CF1138 /* ProfileInterfaceController.swift */,
+				D23B04F0237CA10E00CF1138 /* SettingsInterfaceController.swift */,
 			);
 			path = "coolcraig WatchKit Extension";
 			sourceTree = "<group>";
@@ -306,12 +315,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D23B04F1237CA10E00CF1138 /* SettingsInterfaceController.swift in Sources */,
 				D20F7114236E311E0077F1F2 /* WelcomeInterfaceController.swift in Sources */,
 				D23B04E32371E63500CF1138 /* EntrypointInterfaceController.swift in Sources */,
 				D20F711A236E336B0077F1F2 /* TaskListInterfaceController.swift in Sources */,
 				D20F710C236B99B00077F1F2 /* RewardsHome.swift in Sources */,
 				D20F7116236E313F0077F1F2 /* TaskInterfaceController.swift in Sources */,
 				D20F7110236E30D20077F1F2 /* HomeInterfaceController.swift in Sources */,
+				D23B04EF237CA0EF00CF1138 /* ProfileInterfaceController.swift in Sources */,
+				D23B04ED237CA0AE00CF1138 /* MonthlyReportInterfaceController.swift in Sources */,
 				D23B04E623721DF900CF1138 /* Configuration.swift in Sources */,
 				D20F711E236E4F070077F1F2 /* Utils.swift in Sources */,
 				2669927F234FF64A0028C239 /* NotificationController.swift in Sources */,
@@ -354,7 +366,7 @@
 /* Begin XCBuildConfiguration section */
 		26699289234FF64D0028C239 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D23B04E423721D5300CF1138 /* Config.xcconfig */;
+			baseConfigurationReference = D23B04E9237C9E5900CF1138 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -415,7 +427,7 @@
 		};
 		2669928A234FF64D0028C239 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D23B04E423721D5300CF1138 /* Config.xcconfig */;
+			baseConfigurationReference = D23B04E9237C9E5900CF1138 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -469,7 +481,6 @@
 		};
 		2669928C234FF64D0028C239 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D23B04E423721D5300CF1138 /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
@@ -493,7 +504,6 @@
 		};
 		2669928D234FF64D0028C239 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D23B04E423721D5300CF1138 /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
@@ -517,7 +527,6 @@
 		};
 		26699290234FF64D0028C239 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D23B04E423721D5300CF1138 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -536,7 +545,6 @@
 		};
 		26699291234FF64D0028C239 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D23B04E423721D5300CF1138 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -555,7 +563,6 @@
 		};
 		26699294234FF64D0028C239 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D23B04E423721D5300CF1138 /* Config.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -568,7 +575,6 @@
 		};
 		26699295234FF64D0028C239 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D23B04E423721D5300CF1138 /* Config.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;

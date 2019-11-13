@@ -31,7 +31,7 @@ class WelcomeInterfaceController: WKInterfaceController {
     }
 
     @IBAction func onNextButtonClick() {
-        Utils.navigateToPageAndPop(pageNames: ["HomeInterfaceController","RewardsInterfaceController"])
+        Utils.navigateToPageAndPop(pageNames: ["HomeInterfaceController","RewardsInterfaceController","MonthlyReportInterfaceController","ProfileInterfaceController","SettingsInterfaceController"])
     }
     
     @IBAction func onNotYouButtonClick() {
