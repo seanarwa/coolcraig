@@ -1,0 +1,514 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0247033D818713718785EDE5 /* Pods_CoolCraig.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2A177A654E73C0B033DE423 /* Pods_CoolCraig.framework */; };
+		DC224A89235BEC8C00C88A1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC224A88235BEC8C00C88A1B /* AppDelegate.swift */; };
+		DC224A8B235BEC8C00C88A1B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC224A8A235BEC8C00C88A1B /* SceneDelegate.swift */; };
+		DC224A8D235BEC8C00C88A1B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC224A8C235BEC8C00C88A1B /* ViewController.swift */; };
+		DC224A90235BEC8C00C88A1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC224A8E235BEC8C00C88A1B /* Main.storyboard */; };
+		DC224A92235BEC8F00C88A1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC224A91235BEC8F00C88A1B /* Assets.xcassets */; };
+		DC224A95235BEC8F00C88A1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC224A93235BEC8F00C88A1B /* LaunchScreen.storyboard */; };
+		DC224AA1235BED9000C88A1B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC224AA0235BED9000C88A1B /* HomeViewController.swift */; };
+		DC32BAB5237A7C750000BE9B /* CreateNewGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC32BAB4237A7C750000BE9B /* CreateNewGoalViewController.swift */; };
+		DC6FCA54235C071600D4D280 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC6FCA53235C071600D4D280 /* GoogleService-Info.plist */; };
+		DC6FCA56235C243A00D4D280 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6FCA55235C243A00D4D280 /* Constants.swift */; };
+		DC9F444F236692C2001806CF /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9F444E236692C2001806CF /* WelcomeViewController.swift */; };
+		DCA0A11823726B1100200859 /* AddNewGoalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA0A11723726B1100200859 /* AddNewGoalTableViewController.swift */; };
+		DCA9E95B235BFE8300CE06EC /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA9E95A235BFE8300CE06EC /* Utilities.swift */; };
+		DCB61F3D235EC8AA003E3417 /* RewardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB61F3C235EC8AA003E3417 /* RewardViewController.swift */; };
+		DCCA84382384CC4C0087EA63 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCA84372384CC4C0087EA63 /* AccountViewController.swift */; };
+		DCD8C3F4237A3F5F00BE95F5 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD8C3F3237A3F5F00BE95F5 /* LogInViewController.swift */; };
+		DCDB21EF237A52DF00C6C765 /* CreateNewAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDB21EE237A52DF00C6C765 /* CreateNewAccountViewController.swift */; };
+		DCE51A942383E97B008EBAAA /* GoalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE51A932383E97B008EBAAA /* GoalTableViewCell.swift */; };
+		DCE51A962383FA4B008EBAAA /* GoalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE51A952383FA4B008EBAAA /* GoalTableViewController.swift */; };
+		DCE51A982383FBD1008EBAAA /* AddNewRewardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE51A972383FBD1008EBAAA /* AddNewRewardViewController.swift */; };
+		DCFB978223877824002A02C4 /* RewardsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFB978123877824002A02C4 /* RewardsTableViewController.swift */; };
+		DCFB978F238C9967002A02C4 /* GoalsNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFB978E238C9967002A02C4 /* GoalsNavigationController.swift */; };
+		DCFB97922395E303002A02C4 /* goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFB97912395E303002A02C4 /* goal.swift */; };
+		DCFB97942399CC50002A02C4 /* reward.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFB97932399CC50002A02C4 /* reward.swift */; };
+		DCFB97962399CDA9002A02C4 /* RewardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFB97952399CDA9002A02C4 /* RewardTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9F2F0189D4E7D8E93F596A7B /* Pods-CoolCraig.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoolCraig.release.xcconfig"; path = "Target Support Files/Pods-CoolCraig/Pods-CoolCraig.release.xcconfig"; sourceTree = "<group>"; };
+		B2A177A654E73C0B033DE423 /* Pods_CoolCraig.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoolCraig.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC224A85235BEC8C00C88A1B /* CoolCraig.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoolCraig.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC224A88235BEC8C00C88A1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DC224A8A235BEC8C00C88A1B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DC224A8C235BEC8C00C88A1B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DC224A8F235BEC8C00C88A1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DC224A91235BEC8F00C88A1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC224A94235BEC8F00C88A1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DC224A96235BEC8F00C88A1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC224AA0235BED9000C88A1B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		DC32BAB4237A7C750000BE9B /* CreateNewGoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewGoalViewController.swift; sourceTree = "<group>"; };
+		DC6FCA53235C071600D4D280 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DC6FCA55235C243A00D4D280 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DC9F444E236692C2001806CF /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		DCA0A11723726B1100200859 /* AddNewGoalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewGoalTableViewController.swift; sourceTree = "<group>"; };
+		DCA9E95A235BFE8300CE06EC /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		DCB61F3C235EC8AA003E3417 /* RewardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardViewController.swift; sourceTree = "<group>"; };
+		DCCA84372384CC4C0087EA63 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		DCD8C3F3237A3F5F00BE95F5 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		DCDB21EE237A52DF00C6C765 /* CreateNewAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewAccountViewController.swift; sourceTree = "<group>"; };
+		DCE51A932383E97B008EBAAA /* GoalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalTableViewCell.swift; sourceTree = "<group>"; };
+		DCE51A952383FA4B008EBAAA /* GoalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalTableViewController.swift; sourceTree = "<group>"; };
+		DCE51A972383FBD1008EBAAA /* AddNewRewardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewRewardViewController.swift; sourceTree = "<group>"; };
+		DCFB978123877824002A02C4 /* RewardsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsTableViewController.swift; sourceTree = "<group>"; };
+		DCFB978E238C9967002A02C4 /* GoalsNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsNavigationController.swift; sourceTree = "<group>"; };
+		DCFB97912395E303002A02C4 /* goal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = goal.swift; sourceTree = "<group>"; };
+		DCFB97932399CC50002A02C4 /* reward.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reward.swift; sourceTree = "<group>"; };
+		DCFB97952399CDA9002A02C4 /* RewardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardTableViewCell.swift; sourceTree = "<group>"; };
+		E2AFB80DCBB16845ECAF7AC8 /* Pods-CoolCraig.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoolCraig.debug.xcconfig"; path = "Target Support Files/Pods-CoolCraig/Pods-CoolCraig.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC224A82235BEC8C00C88A1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0247033D818713718785EDE5 /* Pods_CoolCraig.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		933882847BAE9BA2BAA0D1A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B2A177A654E73C0B033DE423 /* Pods_CoolCraig.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C4E5ECEA37E6A04BCA8FE65D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E2AFB80DCBB16845ECAF7AC8 /* Pods-CoolCraig.debug.xcconfig */,
+				9F2F0189D4E7D8E93F596A7B /* Pods-CoolCraig.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DC224A7C235BEC8C00C88A1B = {
+			isa = PBXGroup;
+			children = (
+				DCFB97902395E2F1002A02C4 /* Model */,
+				DC224A87235BEC8C00C88A1B /* CoolCraig */,
+				C4E5ECEA37E6A04BCA8FE65D /* Pods */,
+				933882847BAE9BA2BAA0D1A6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DC224A86235BEC8C00C88A1B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC224A85235BEC8C00C88A1B /* CoolCraig.app */,
+			);
+			name = Products;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		DC224A87235BEC8C00C88A1B /* CoolCraig */ = {
+			isa = PBXGroup;
+			children = (
+				DC224A88235BEC8C00C88A1B /* AppDelegate.swift */,
+				DC224A8A235BEC8C00C88A1B /* SceneDelegate.swift */,
+				DCA9E95C235BFE9000CE06EC /* Helper */,
+				DC224AA2235BEDB200C88A1B /* ViewController */,
+				DC224A8E235BEC8C00C88A1B /* Main.storyboard */,
+				DC224A91235BEC8F00C88A1B /* Assets.xcassets */,
+				DC224A93235BEC8F00C88A1B /* LaunchScreen.storyboard */,
+				DC224A96235BEC8F00C88A1B /* Info.plist */,
+				DC6FCA53235C071600D4D280 /* GoogleService-Info.plist */,
+				DC224A86235BEC8C00C88A1B /* Products */,
+			);
+			path = CoolCraig;
+			sourceTree = "<group>";
+		};
+		DC224AA2235BEDB200C88A1B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DC224A8C235BEC8C00C88A1B /* ViewController.swift */,
+				DCDB21EE237A52DF00C6C765 /* CreateNewAccountViewController.swift */,
+				DCD8C3F3237A3F5F00BE95F5 /* LogInViewController.swift */,
+				DC224AA0235BED9000C88A1B /* HomeViewController.swift */,
+				DC9F444E236692C2001806CF /* WelcomeViewController.swift */,
+				DCFB978E238C9967002A02C4 /* GoalsNavigationController.swift */,
+				DCE51A952383FA4B008EBAAA /* GoalTableViewController.swift */,
+				DCE51A932383E97B008EBAAA /* GoalTableViewCell.swift */,
+				DCA0A11723726B1100200859 /* AddNewGoalTableViewController.swift */,
+				DC32BAB4237A7C750000BE9B /* CreateNewGoalViewController.swift */,
+				DCFB978123877824002A02C4 /* RewardsTableViewController.swift */,
+				DCFB97952399CDA9002A02C4 /* RewardTableViewCell.swift */,
+				DCB61F3C235EC8AA003E3417 /* RewardViewController.swift */,
+				DCE51A972383FBD1008EBAAA /* AddNewRewardViewController.swift */,
+				DCCA84372384CC4C0087EA63 /* AccountViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		DCA9E95C235BFE9000CE06EC /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				DCA9E95A235BFE8300CE06EC /* Utilities.swift */,
+				DC6FCA55235C243A00D4D280 /* Constants.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		DCFB97902395E2F1002A02C4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DCFB97912395E303002A02C4 /* goal.swift */,
+				DCFB97932399CC50002A02C4 /* reward.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC224A84235BEC8C00C88A1B /* CoolCraig */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC224A99235BEC8F00C88A1B /* Build configuration list for PBXNativeTarget "CoolCraig" */;
+			buildPhases = (
+				4E093A711149AAE63DC28A28 /* [CP] Check Pods Manifest.lock */,
+				DC224A81235BEC8C00C88A1B /* Sources */,
+				DC224A82235BEC8C00C88A1B /* Frameworks */,
+				DC224A83235BEC8C00C88A1B /* Resources */,
+				BC7E0A9BDD149E02F57CF65F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoolCraig;
+			productName = CoolCraig;
+			productReference = DC224A85235BEC8C00C88A1B /* CoolCraig.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC224A7D235BEC8C00C88A1B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = InfProjCourse2;
+				TargetAttributes = {
+					DC224A84235BEC8C00C88A1B = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
+			};
+			buildConfigurationList = DC224A80235BEC8C00C88A1B /* Build configuration list for PBXProject "CoolCraig" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DC224A7C235BEC8C00C88A1B;
+			productRefGroup = DC224A86235BEC8C00C88A1B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC224A84235BEC8C00C88A1B /* CoolCraig */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC224A83235BEC8C00C88A1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC224A95235BEC8F00C88A1B /* LaunchScreen.storyboard in Resources */,
+				DC6FCA54235C071600D4D280 /* GoogleService-Info.plist in Resources */,
+				DC224A92235BEC8F00C88A1B /* Assets.xcassets in Resources */,
+				DC224A90235BEC8C00C88A1B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4E093A711149AAE63DC28A28 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CoolCraig-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC7E0A9BDD149E02F57CF65F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CoolCraig/Pods-CoolCraig-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CoolCraig/Pods-CoolCraig-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CoolCraig/Pods-CoolCraig-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC224A81235BEC8C00C88A1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC224A8D235BEC8C00C88A1B /* ViewController.swift in Sources */,
+				DC32BAB5237A7C750000BE9B /* CreateNewGoalViewController.swift in Sources */,
+				DCDB21EF237A52DF00C6C765 /* CreateNewAccountViewController.swift in Sources */,
+				DC224A89235BEC8C00C88A1B /* AppDelegate.swift in Sources */,
+				DCFB97962399CDA9002A02C4 /* RewardTableViewCell.swift in Sources */,
+				DC9F444F236692C2001806CF /* WelcomeViewController.swift in Sources */,
+				DCFB97942399CC50002A02C4 /* reward.swift in Sources */,
+				DCCA84382384CC4C0087EA63 /* AccountViewController.swift in Sources */,
+				DCA9E95B235BFE8300CE06EC /* Utilities.swift in Sources */,
+				DCE51A982383FBD1008EBAAA /* AddNewRewardViewController.swift in Sources */,
+				DCE51A962383FA4B008EBAAA /* GoalTableViewController.swift in Sources */,
+				DCB61F3D235EC8AA003E3417 /* RewardViewController.swift in Sources */,
+				DCFB978223877824002A02C4 /* RewardsTableViewController.swift in Sources */,
+				DCE51A942383E97B008EBAAA /* GoalTableViewCell.swift in Sources */,
+				DC224A8B235BEC8C00C88A1B /* SceneDelegate.swift in Sources */,
+				DCD8C3F4237A3F5F00BE95F5 /* LogInViewController.swift in Sources */,
+				DCA0A11823726B1100200859 /* AddNewGoalTableViewController.swift in Sources */,
+				DC224AA1235BED9000C88A1B /* HomeViewController.swift in Sources */,
+				DCFB97922395E303002A02C4 /* goal.swift in Sources */,
+				DCFB978F238C9967002A02C4 /* GoalsNavigationController.swift in Sources */,
+				DC6FCA56235C243A00D4D280 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DC224A8E235BEC8C00C88A1B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC224A8F235BEC8C00C88A1B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DC224A93235BEC8F00C88A1B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC224A94235BEC8F00C88A1B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DC224A97235BEC8F00C88A1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DC224A98235BEC8F00C88A1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DC224A9A235BEC8F00C88A1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2AFB80DCBB16845ECAF7AC8 /* Pods-CoolCraig.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QK4S68YG37;
+				INFOPLIST_FILE = CoolCraig/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "UCI-Informatics-Department.CoolCraig";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		DC224A9B235BEC8F00C88A1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F2F0189D4E7D8E93F596A7B /* Pods-CoolCraig.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QK4S68YG37;
+				INFOPLIST_FILE = CoolCraig/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "UCI-Informatics-Department.CoolCraig";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC224A80235BEC8C00C88A1B /* Build configuration list for PBXProject "CoolCraig" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC224A97235BEC8F00C88A1B /* Debug */,
+				DC224A98235BEC8F00C88A1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC224A99235BEC8F00C88A1B /* Build configuration list for PBXNativeTarget "CoolCraig" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC224A9A235BEC8F00C88A1B /* Debug */,
+				DC224A9B235BEC8F00C88A1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DC224A7D235BEC8C00C88A1B /* Project object */;
+}
