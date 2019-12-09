@@ -33,13 +33,13 @@ class TaskListInterfaceController: WKInterfaceController {
         taskListTable.setNumberOfRows(tasks.count, withRowType: "TaskListTableRowController")
         for i in 0..<taskListTable.numberOfRows {
             guard let row = taskListTable.rowController(at: i) as? TaskListTableRowController else { continue }
-            row.taskLabel.setText(tasks[i]["title"] as? String)
+            row.taskLabel.setText(tasks[i]["name"] as? String)
             row.taskLabel.setTextColor(context["color"] as? UIColor)
         }
     }
     
     override func table(_ table: WKInterfaceTable, didSelectRowAt rowIndex: Int) {
-        pushController(withName: "TaskInterfaceController", context: tasks[rowIndex])
+        pushController(withName: "TaskInterfaceController", context: ["task": tasks[rowIndex]])
     }
 
     override func willActivate() {

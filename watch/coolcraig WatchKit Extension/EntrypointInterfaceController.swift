@@ -8,7 +8,6 @@
 import WatchKit
 import Foundation
 
-
 class EntrypointInterfaceController: WKInterfaceController {
 
     override func awake(withContext context: Any?) {
@@ -53,6 +52,7 @@ class EntrypointInterfaceController: WKInterfaceController {
                 DispatchQueue.main.async {
                     if(success) {
                         print("User is signed in, redirecting to Welcome page ...")
+                        print("User ID: \(Utils.getKey(key: "userId"))")
                     } else {
                         print("User is not signed in, redirecting to Login page ...")
                     }

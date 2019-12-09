@@ -40,7 +40,6 @@ class LoginInterfaceController: WKInterfaceController {
         
         if let url = URL(string: "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=\(Environment.FIREBASE_API_KEY)") {
             
-            
             let json: [String:Any] = [
                 "email": email,
                 "password": password,

@@ -90,14 +90,40 @@ class Utils {
         userDefaults.synchronize()
     }
     
-    static func getKey(key: String) -> Any {
+    static func getKey(key: String, defaultValue:Any = "") -> Any {
         if let value: AnyObject = UserDefaults.standard.object(forKey: key) as AnyObject? {
             return value
         }
-        return ""
+        return defaultValue
     }
     
     static func deleteKey(key: String) -> Any {
         UserDefaults.standard.removeObject(forKey: key)
+    }
+    
+    static func getDictValue(dict: [String: Any], forPath: String) -> [String: Any] {
+        return (dict as NSDictionary).value(forKeyPath: forPath) as! [String: Any]
+    }
+    
+    static func normalize(dict: [String: Any]) -> [String: Any] {
+        var result: [String: Any] = [:]
+        
+        for key in Array(dict.keys) {
+            let f = dict[key] as! [String: Any]
+            let type: String = Array(f.keys)[0]
+            switch type {
+            case "stringValue", "timestampValue", "referenceValue":
+                result[key] = f[type] as! String
+            case "integerValue":
+                result[key] = Int(f[type] as! String)
+            case "booleanValue":
+                result[key] = f[type] as! Bool
+            default:
+                print("invalid type: \(type)")
+            }
+            
+        }
+        
+        return result
     }
 }

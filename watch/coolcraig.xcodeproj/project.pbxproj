@@ -31,6 +31,11 @@
 		D23B04ED237CA0AE00CF1138 /* MonthlyReportInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23B04EC237CA0AE00CF1138 /* MonthlyReportInterfaceController.swift */; };
 		D23B04EF237CA0EF00CF1138 /* ProfileInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23B04EE237CA0EF00CF1138 /* ProfileInterfaceController.swift */; };
 		D23B04F1237CA10E00CF1138 /* SettingsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23B04F0237CA10E00CF1138 /* SettingsInterfaceController.swift */; };
+		D23B04F32396D8A100CF1138 /* RewardsGroupsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23B04F22396D8A100CF1138 /* RewardsGroupsInterfaceController.swift */; };
+		D23B04F52396D8C500CF1138 /* RewardsRedeemInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23B04F42396D8C500CF1138 /* RewardsRedeemInterfaceController.swift */; };
+		D23B04F72396DA7800CF1138 /* RewardsPointsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23B04F62396DA7800CF1138 /* RewardsPointsInterfaceController.swift */; };
+		D23B04F92396DB0200CF1138 /* GroupListTableRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23B04F82396DB0200CF1138 /* GroupListTableRowController.swift */; };
+		D23B04FB2396DB8C00CF1138 /* RewardsListTableRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23B04FA2396DB8C00CF1138 /* RewardsListTableRowController.swift */; };
 		D2676841235EB5670007F692 /* NewTaskInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2676840235EB5670007F692 /* NewTaskInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
@@ -106,6 +111,11 @@
 		D23B04EC237CA0AE00CF1138 /* MonthlyReportInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyReportInterfaceController.swift; sourceTree = "<group>"; };
 		D23B04EE237CA0EF00CF1138 /* ProfileInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInterfaceController.swift; sourceTree = "<group>"; };
 		D23B04F0237CA10E00CF1138 /* SettingsInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsInterfaceController.swift; sourceTree = "<group>"; };
+		D23B04F22396D8A100CF1138 /* RewardsGroupsInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsGroupsInterfaceController.swift; sourceTree = "<group>"; };
+		D23B04F42396D8C500CF1138 /* RewardsRedeemInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsRedeemInterfaceController.swift; sourceTree = "<group>"; };
+		D23B04F62396DA7800CF1138 /* RewardsPointsInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsPointsInterfaceController.swift; sourceTree = "<group>"; };
+		D23B04F82396DB0200CF1138 /* GroupListTableRowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupListTableRowController.swift; sourceTree = "<group>"; };
+		D23B04FA2396DB8C00CF1138 /* RewardsListTableRowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsListTableRowController.swift; sourceTree = "<group>"; };
 		D2676840235EB5670007F692 /* NewTaskInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -174,6 +184,11 @@
 				D23B04EC237CA0AE00CF1138 /* MonthlyReportInterfaceController.swift */,
 				D23B04EE237CA0EF00CF1138 /* ProfileInterfaceController.swift */,
 				D23B04F0237CA10E00CF1138 /* SettingsInterfaceController.swift */,
+				D23B04F22396D8A100CF1138 /* RewardsGroupsInterfaceController.swift */,
+				D23B04F42396D8C500CF1138 /* RewardsRedeemInterfaceController.swift */,
+				D23B04F62396DA7800CF1138 /* RewardsPointsInterfaceController.swift */,
+				D23B04F82396DB0200CF1138 /* GroupListTableRowController.swift */,
+				D23B04FA2396DB8C00CF1138 /* RewardsListTableRowController.swift */,
 			);
 			path = "coolcraig WatchKit Extension";
 			sourceTree = "<group>";
@@ -316,6 +331,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D23B04F1237CA10E00CF1138 /* SettingsInterfaceController.swift in Sources */,
+				D23B04F92396DB0200CF1138 /* GroupListTableRowController.swift in Sources */,
 				D20F7114236E311E0077F1F2 /* WelcomeInterfaceController.swift in Sources */,
 				D23B04E32371E63500CF1138 /* EntrypointInterfaceController.swift in Sources */,
 				D20F711A236E336B0077F1F2 /* TaskListInterfaceController.swift in Sources */,
@@ -328,8 +344,12 @@
 				D20F711E236E4F070077F1F2 /* Utils.swift in Sources */,
 				2669927F234FF64A0028C239 /* NotificationController.swift in Sources */,
 				D2676841235EB5670007F692 /* NewTaskInterfaceController.swift in Sources */,
+				D23B04FB2396DB8C00CF1138 /* RewardsListTableRowController.swift in Sources */,
+				D23B04F52396D8C500CF1138 /* RewardsRedeemInterfaceController.swift in Sources */,
 				2669927D234FF64A0028C239 /* ExtensionDelegate.swift in Sources */,
+				D23B04F32396D8A100CF1138 /* RewardsGroupsInterfaceController.swift in Sources */,
 				D20F710E236BA19B0077F1F2 /* RewardSelectGroup.swift in Sources */,
+				D23B04F72396DA7800CF1138 /* RewardsPointsInterfaceController.swift in Sources */,
 				D20F7120236E56DE0077F1F2 /* TaskListTableRowController.swift in Sources */,
 				26699281234FF64A0028C239 /* NotificationView.swift in Sources */,
 				D20F7112236E31070077F1F2 /* LoginInterfaceController.swift in Sources */,

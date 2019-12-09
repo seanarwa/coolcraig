@@ -11,7 +11,13 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate {
 
     func applicationDidFinishLaunching() {
         // Perform any final initialization of your application.
-        
+        UserDefaults.standard.register(defaults: [
+            "notificationText": false,
+            "notificationVibrate": true,
+            "notificationSurvey": true,
+            "notificationReminder": true,
+            "notificationMuteAll": false
+        ])
     }
 
     func applicationDidBecomeActive() {

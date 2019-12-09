@@ -90,6 +90,39 @@
             </objects>
             <point key="canvasLocation" x="1336" y="1031"/>
         </scene>
+        <!--Interface Controller-->
+        <scene sceneID="abz-M8-m80">
+            <objects>
+                <controller id="3QR-c3-Nc8">
+                    <items>
+                        <label alignment="center" text="CoolCraig" id="F0a-i9-gQm">
+                            <color key="textColor" red="0.20382404330000001" green="0.46806800370000001" blue="0.96475380659999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
+                        </label>
+                        <textField width="1" alignment="left" placeholder="Student ID" textContentType="username" id="bqm-jc-LpT">
+                            <color key="textColor" red="0.69415342810000003" green="0.70200598240000001" blue="0.6980398297" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <action selector="onEmailTextInput:" destination="FGt-T3-1Hg" id="mar-ze-Gd4"/>
+                            </connections>
+                        </textField>
+                        <textField width="1" alignment="left" placeholder="PIN" textContentType="password" secureTextEntry="YES" id="HXR-rR-xwr">
+                            <color key="textColor" red="0.40003186460000001" green="0.40390905739999999" blue="0.4039221704" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <action selector="onPasswordTextInput:" destination="FGt-T3-1Hg" id="jGj-Pz-bdl"/>
+                            </connections>
+                        </textField>
+                        <button width="1" height="40" alignment="left" title="Sign In" id="qs9-Dd-c6D">
+                            <color key="backgroundColor" red="0.20382404330000001" green="0.46806800370000001" blue="0.96475380659999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <fontDescription key="font" type="system" pointSize="17"/>
+                            <connections>
+                                <action selector="onSignInButtonClick" destination="FGt-T3-1Hg" id="NQe-ZX-To2"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-71" y="-601"/>
+        </scene>
         <!--LoginInterfaceController-->
         <scene sceneID="98G-gT-vKv">
             <objects>
@@ -193,7 +226,7 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="505" y="-264"/>
+            <point key="canvasLocation" x="515" y="-258"/>
         </scene>
         <!--HomeInterfaceController-->
         <scene sceneID="bjb-ku-gmB">
@@ -300,7 +333,7 @@
                                     <color key="titleColor" red="0.89978069067001343" green="0.74936264753341675" blue="0.39991974830627441" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
                                     <connections>
-                                        <segue destination="h0q-lI-peu" kind="push" id="DwG-YC-aUQ"/>
+                                        <segue destination="lcL-v5-6Sw" kind="push" id="HEz-tJ-W4I"/>
                                     </connections>
                                 </button>
                             </items>
@@ -452,16 +485,16 @@
                                 <segue destination="NL4-k6-NxP" kind="push" id="J48-Bp-qpN"/>
                             </connections>
                         </button>
-                        <label alignment="left" text="User name" id="xec-ze-ZSA">
+                        <label alignment="left" text="Name" id="xec-ze-ZSA">
                             <color key="textColor" red="0.32200098037719727" green="0.60169631242752075" blue="0.87846440076828003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
                         </label>
-                        <label alignment="left" text="Alexandar Mcqueen Li" id="wM7-W2-CdW"/>
+                        <label alignment="left" text="Sean Chang" id="wM7-W2-CdW"/>
                         <label alignment="left" text="Nickname" id="syE-ER-sir">
                             <color key="textColor" red="0.32200098037719727" green="0.60169631242752075" blue="0.87846440076828003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
                         </label>
-                        <label alignment="left" text="None" id="PRX-Vz-xlN"/>
+                        <label alignment="left" text="Sean" id="PRX-Vz-xlN"/>
                         <button width="1" alignment="left" title="Set nickname" id="jbF-XF-5vB">
                             <fontDescription key="font" type="system" pointSize="16"/>
                             <connections>
@@ -472,13 +505,15 @@
                             <color key="textColor" red="0.32200098037719727" green="0.60169631242752075" blue="0.87846440076828003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
                         </label>
-                        <label alignment="left" text="aiyuanl@uci.edu" id="4d0-xM-Rtw"/>
+                        <label alignment="left" text="seanarwa@gmail.com" id="4d0-xM-Rtw"/>
                         <label alignment="left" text="My groups" id="ZzY-Ys-3E4">
                             <color key="textColor" red="0.32200098037719727" green="0.60169631242752075" blue="0.87846440076828003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
                         </label>
-                        <label alignment="left" text="Grace'smath" id="2wl-lu-yJY"/>
-                        <label alignment="left" text="another groupname" id="opH-We-dsv"/>
+                        <label alignment="left" text="INF 117" id="2wl-lu-yJY"/>
+                        <button width="1" alignment="left" title="Change PIN" id="urv-Qm-l8i">
+                            <fontDescription key="font" type="system" pointSize="16"/>
+                        </button>
                     </items>
                     <connections>
                         <segue destination="iKv-tC-heX" kind="relationship" relationship="nextPage" id="qvX-Ao-W5g"/>
@@ -492,14 +527,41 @@
             <objects>
                 <controller identifier="SettingsInterfaceController" id="iKv-tC-heX" customClass="SettingsInterfaceController" customModule="coolcraig_WatchKit_Extension">
                     <items>
-                        <label alignment="left" text="Display" id="5R5-Mt-vVv"/>
-                        <switch width="1" alignment="left" value="YES" title="Text" id="WfC-sk-4TE"/>
-                        <switch width="1" alignment="left" value="YES" title="Vibrate" id="GcK-TW-uoV"/>
+                        <label alignment="left" text="Notifications" id="5R5-Mt-vVv"/>
+                        <switch width="1" alignment="left" value="YES" title="Text" id="WfC-sk-4TE">
+                            <connections>
+                                <action selector="onTextSwitchAction:" destination="iKv-tC-heX" id="rHQ-xN-Cj8"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" value="YES" title="Vibrate" id="GcK-TW-uoV">
+                            <connections>
+                                <action selector="onVibrateSwitchAction:" destination="iKv-tC-heX" id="JbZ-y4-Eks"/>
+                            </connections>
+                        </switch>
                         <separator alignment="left" id="a0g-8Z-way"/>
-                        <switch width="1" alignment="left" value="YES" title="Survey" id="z5b-qJ-t0U"/>
-                        <switch width="1" alignment="left" value="YES" title="Reminder" id="CeI-FM-0sp"/>
-                        <switch width="1" alignment="left" value="YES" title="Mute All" id="2eA-74-uLR"/>
+                        <switch width="1" alignment="left" value="YES" title="Survey" id="z5b-qJ-t0U">
+                            <connections>
+                                <action selector="onSurveySwitchAction:" destination="iKv-tC-heX" id="CfF-YV-PZA"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" value="YES" title="Reminder" id="CeI-FM-0sp">
+                            <connections>
+                                <action selector="onReminderSwitchAction:" destination="iKv-tC-heX" id="OWZ-0Y-CX0"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" value="YES" title="Mute All" id="2eA-74-uLR">
+                            <connections>
+                                <action selector="onMuteAllSwitchAction:" destination="iKv-tC-heX" id="hM2-GK-BcW"/>
+                            </connections>
+                        </switch>
                     </items>
+                    <connections>
+                        <outlet property="muteAllSwitch" destination="2eA-74-uLR" id="Pu5-tJ-guA"/>
+                        <outlet property="reminderSwitch" destination="CeI-FM-0sp" id="8Me-ga-p6f"/>
+                        <outlet property="surveySwitch" destination="z5b-qJ-t0U" id="Won-qH-3Ka"/>
+                        <outlet property="textSwitch" destination="WfC-sk-4TE" id="q7e-dx-5Ld"/>
+                        <outlet property="vibrateSwitch" destination="GcK-TW-uoV" id="YBp-gm-kBM"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="1708" y="175"/>
@@ -590,7 +652,7 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="636" y="561"/>
+            <point key="canvasLocation" x="636" y="574"/>
         </scene>
         <!--TaskInterfaceController-->
         <scene sceneID="l11-R2-8zI">
@@ -599,44 +661,43 @@
                     <items>
                         <group width="1" alignment="center" id="LYn-QE-Duf">
                             <items>
-                                <label width="1" alignment="left" verticalAlignment="center" text="Be focused on class" id="ev3-ts-BRI">
-                                    <color key="textColor" red="0.93074077369999997" green="0.59243720769999997" blue="0.2155520916" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <label width="1" alignment="left" verticalAlignment="center" text="TASK NAME" id="ev3-ts-BRI">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
                                 </label>
                             </items>
                         </group>
-                        <group width="1" alignment="center" id="HdA-6d-RNh">
+                        <group width="1" alignment="center" layout="vertical" id="HdA-6d-RNh">
                             <items>
-                                <timer alignment="center" format="full" id="h1a-vF-r2d">
-                                    <calendarUnit key="units" day="YES" hour="YES"/>
-                                </timer>
                                 <label alignment="left" text="Due date" id="n53-K6-NIZ">
                                     <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </label>
+                                <label alignment="left" text="DUE DATE" id="Wdj-cz-0Jo"/>
                             </items>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </group>
                         <separator alignment="left" id="EW2-b2-Lwg">
                             <color key="color" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </separator>
                         <group width="1" height="21" alignment="left" id="ANh-QR-TnA">
                             <items>
-                                <label alignment="left" text="10" id="U4k-Uh-GMS"/>
+                                <label alignment="left" text="POINTS" id="U4k-Uh-GMS"/>
                                 <label width="58" alignment="left" text="point(s)" id="EAD-YQ-ePC"/>
-                            </items>
-                        </group>
-                        <group width="1" alignment="left" id="uEr-Cg-SQB">
-                            <items>
-                                <label alignment="left" verticalAlignment="center" text="MWF" id="tAR-ft-r9A"/>
-                                <label alignment="left" text="10:00AM" id="7t9-45-Zfg"/>
                             </items>
                         </group>
                         <button width="1" alignment="left" title="I'm finished!" id="vvO-yk-aus">
                             <color key="backgroundColor" red="0.20382404330000001" green="0.46806800370000001" blue="0.96475380659999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <fontDescription key="font" type="system" pointSize="17"/>
+                            <connections>
+                                <action selector="onCompleteButtonClick" destination="CQu-mq-NIV" id="mPD-R2-L28"/>
+                            </connections>
                         </button>
                     </items>
                     <connections>
-                        <outlet property="taskLabel" destination="ev3-ts-BRI" id="yZl-2l-FCG"/>
+                        <outlet property="completeButton" destination="vvO-yk-aus" id="eZl-be-1OK"/>
+                        <outlet property="dueDateLabel" destination="Wdj-cz-0Jo" id="eid-9z-k0J"/>
+                        <outlet property="nameLabel" destination="ev3-ts-BRI" id="sm0-dI-djQ"/>
+                        <outlet property="pointsLabel" destination="U4k-Uh-GMS" id="IfD-zE-a8W"/>
                     </connections>
                 </controller>
             </objects>
@@ -683,7 +744,7 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="636" y="945"/>
+            <point key="canvasLocation" x="636" y="973"/>
         </scene>
         <!--Interface Controller-->
         <scene sceneID="PdS-WR-M4Z">
@@ -716,7 +777,7 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="636" y="1293"/>
+            <point key="canvasLocation" x="636" y="1304"/>
         </scene>
         <!--Interface Controller-->
         <scene sceneID="FVQ-TM-nsN">
@@ -791,6 +852,222 @@
             </objects>
             <point key="canvasLocation" x="-79" y="530"/>
         </scene>
+        <!--Rewards Groups Interface Controller-->
+        <scene sceneID="m8Q-YO-7X8">
+            <objects>
+                <controller id="Ylq-uw-8Nj" customClass="RewardsGroupsInterfaceController" customModule="coolcraig_WatchKit_Extension">
+                    <items>
+                        <group alignment="center" id="jY5-Sz-2gt">
+                            <items>
+                                <imageView width="20" height="20" alignment="left" verticalAlignment="center" image="arrow.down.circle" catalog="system" contentMode="scaleAspectFit" id="s1f-7Q-Aoa">
+                                    <color key="tintColor" red="0.31398740409999998" green="0.58608657119999996" blue="0.85885590310000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </imageView>
+                                <label alignment="left" verticalAlignment="center" text="Pick one group" id="bv2-EZ-Zdt">
+                                    <color key="textColor" red="0.33001410959999999" green="0.61326748129999997" blue="0.89807301760000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
+                                </label>
+                            </items>
+                        </group>
+                        <table alignment="left" id="PBi-ZU-BqH">
+                            <items>
+                                <tableRow identifier="GroupListTableRowController" id="V8B-Zb-TJe" customClass="GroupListTableRowController" customModule="coolcraig_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="WIU-lR-KRb">
+                                        <items>
+                                            <label alignment="center" verticalAlignment="center" text="Label" id="rF7-9U-1ah">
+                                                <color key="textColor" red="0.8997806907" green="0.74936264750000003" blue="0.39991974829999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="890" y="647"/>
+        </scene>
+        <!--Rewards Points Interface Controller-->
+        <scene sceneID="et8-YT-H84">
+            <objects>
+                <controller id="toN-bE-HZS" customClass="RewardsPointsInterfaceController" customModule="coolcraig_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="center" radius="15" id="l5D-SB-HAl">
+                            <items>
+                                <label alignment="center" text="My points:  ~" id="eiA-lN-PUI">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </label>
+                                <label width="20" alignment="center" text="10" id="FJi-PL-RMs">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </label>
+                            </items>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </group>
+                        <table alignment="left" id="6bO-ta-yVI">
+                            <items>
+                                <tableRow identifier="RewardsListTableRowController" id="udX-50-KxI" customClass="RewardsListTableRowController" customModule="coolcraig_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" layout="vertical" id="gQN-yf-T7s">
+                                        <items>
+                                            <label alignment="center" verticalAlignment="center" text="Label" id="cWw-8T-KKQ">
+                                                <color key="textColor" red="0.8997806907" green="0.74936264750000003" blue="0.39991974829999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="890" y="973"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="hPF-GZ-irV">
+            <objects>
+                <controller id="mzl-Oj-iYd">
+                    <items>
+                        <label alignment="center" text="Enter new PIN" textAlignment="center" numberOfLines="2" id="nbi-fD-GjB">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="font" type="system" pointSize="20"/>
+                        </label>
+                        <textField width="1" alignment="center" textContentType="one-time-code" id="4Cg-ib-YfE"/>
+                        <button width="1" alignment="left" title="OK!" id="ecd-ed-zXV">
+                            <color key="backgroundColor" red="0.20382404330000001" green="0.46806800370000001" blue="0.96475380659999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <fontDescription key="font" type="system" pointSize="17"/>
+                        </button>
+                    </items>
+                    <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1604" y="667"/>
+        </scene>
+        <!--Rewards Redeem Interface Controller-->
+        <scene sceneID="fB8-c9-7J6">
+            <objects>
+                <controller id="mtE-Qm-R7K" customClass="RewardsRedeemInterfaceController" customModule="coolcraig_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" text="Wonderful!" id="2wl-tJ-O1Z">
+                            <color key="textColor" red="0.8997806907" green="0.74936264750000003" blue="0.39991974829999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
+                        </label>
+                        <label alignment="center" text="Now you earn one" id="2fn-lk-hJi"/>
+                        <label alignment="center" text="chocolate" id="ZIe-Zq-QGB">
+                            <color key="textColor" red="0.91894072289999995" green="0.25334346289999998" blue="0.14501890540000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </label>
+                        <group width="1" alignment="left" id="NS2-gK-pmf">
+                            <items>
+                                <label alignment="left" text="My point(s): ~" id="oFX-jE-GyG"/>
+                                <label alignment="left" text="0" id="Zw4-dq-cF2">
+                                    <color key="textColor" red="0.91894072289999995" green="0.25334346289999998" blue="0.14501890540000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </label>
+                            </items>
+                        </group>
+                        <button width="1" alignment="left" title="Back Home!" id="LKo-LL-NYi">
+                            <color key="backgroundColor" red="0.20382404330000001" green="0.46806800370000001" blue="0.96475380659999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <fontDescription key="font" type="system" pointSize="17"/>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="921" y="1288"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="QdT-Zf-CgH">
+            <objects>
+                <controller id="lcL-v5-6Sw">
+                    <items>
+                        <group alignment="center" id="MgX-eL-GSw">
+                            <items>
+                                <imageView width="20" height="20" alignment="left" verticalAlignment="center" image="arrow.down.circle" catalog="system" contentMode="scaleAspectFit" id="Uqe-KW-RVb">
+                                    <color key="tintColor" red="0.31398740409999998" green="0.58608657119999996" blue="0.85885590310000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </imageView>
+                                <label alignment="left" verticalAlignment="center" text="Pick one group" id="twh-Ki-Pcn">
+                                    <color key="textColor" red="0.33001410959999999" green="0.61326748129999997" blue="0.89807301760000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
+                                </label>
+                            </items>
+                        </group>
+                        <button width="1" alignment="left" title="INF 117" id="YWV-nt-HKe">
+                            <color key="titleColor" red="0.8997806907" green="0.74936264750000003" blue="0.39991974829999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <color key="backgroundColor" red="0.13336184619999999" green="0.13326132299999999" blue="0.13725566859999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                            <connections>
+                                <segue destination="mMw-Ex-8xj" kind="push" id="8Bt-iz-smN"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1106" y="667"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="MUI-mx-vs3">
+            <objects>
+                <controller id="mMw-Ex-8xj">
+                    <items>
+                        <group width="1" alignment="center" radius="15" id="0pm-QN-an9">
+                            <items>
+                                <label alignment="center" text="My points:  ~" id="TwY-y7-g6M">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </label>
+                                <label width="20" alignment="center" text="50" id="WN2-h1-jJh">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </label>
+                            </items>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </group>
+                        <button width="1" alignment="left" title="Ice Cream ~10" id="lZO-J3-mlF">
+                            <color key="titleColor" red="0.8997806907" green="0.74936264750000003" blue="0.39991974829999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <color key="backgroundColor" red="0.13336184619999999" green="0.13326132299999999" blue="0.13725566859999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                            <connections>
+                                <segue destination="0b1-fp-tim" kind="push" id="li0-5k-0sF"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Chocolate ~5" id="Ype-3j-RHh">
+                            <color key="titleColor" red="0.8997806907" green="0.74936264750000003" blue="0.39991974829999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <color key="backgroundColor" red="0.13336184619999999" green="0.13326132299999999" blue="0.13725566859999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                        </button>
+                        <button width="1" alignment="left" title="10 dollars ~100" id="HBb-6j-2YB">
+                            <color key="titleColor" red="0.8997806907" green="0.74936264750000003" blue="0.39991974829999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <color key="backgroundColor" red="0.13336184619999999" green="0.13326132299999999" blue="0.13725566859999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1118" y="985"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="FQj-Ee-yv7">
+            <objects>
+                <controller id="0b1-fp-tim">
+                    <items>
+                        <label alignment="center" text="Wonderful!" id="92W-uX-Iub">
+                            <color key="textColor" red="0.8997806907" green="0.74936264750000003" blue="0.39991974829999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
+                        </label>
+                        <label alignment="center" text="Now you earn one" id="f88-SL-wWc"/>
+                        <label alignment="center" text="chocolate" id="OiR-MQ-DNE">
+                            <color key="textColor" red="0.91894072289999995" green="0.25334346289999998" blue="0.14501890540000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </label>
+                        <group width="1" alignment="left" id="JaO-nh-RWo">
+                            <items>
+                                <label alignment="left" text="My point(s): ~" id="HeO-Vy-jRV"/>
+                                <label alignment="left" text="0" id="QhT-DW-KE7">
+                                    <color key="textColor" red="0.91894072289999995" green="0.25334346289999998" blue="0.14501890540000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </label>
+                            </items>
+                        </group>
+                        <button width="1" alignment="left" title="Back Home!" id="zk5-OV-TeU">
+                            <color key="backgroundColor" red="0.20382404330000001" green="0.46806800370000001" blue="0.96475380659999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <fontDescription key="font" type="system" pointSize="17"/>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1117" y="1288"/>
+        </scene>
     </scenes>
     <resources>
         <image name="arrow.down.circle" catalog="system" width="64" height="62"/>
@@ -805,7 +1082,7 @@
         <image name="waveform.path.ecg" catalog="system" width="64" height="62"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="3Dh-Ds-S2s"/>
-        <segue reference="4QX-Hm-i5I"/>
+        <segue reference="UGm-uA-8jK"/>
+        <segue reference="frR-IK-ucH"/>
     </inferredMetricsTieBreakers>
 </document>

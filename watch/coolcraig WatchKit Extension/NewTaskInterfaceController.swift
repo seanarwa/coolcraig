@@ -16,8 +16,7 @@ class NewTaskInterfaceController: WKInterfaceController {
     @IBOutlet weak var addButton: WKInterfaceButton!
     
     let categories = ["School", "Health", "Social", "Others"]
-    let goals = [["Be focused in class"],["Take a stroll","Take a deep breath"],["Say something nice to someone"],["the other goals"]]
-    let pickerData = ["Do Something Extra", "Answer a Survey", "Do a Chore", "Be Social", "Behave", "Sleep", "Exercise"]
+    let goals = [["Be focused in class", "Bring school material","Bring lunch","Bring PE clothes","Write your name","Stay seated","Participate in class","Organize your belongings","Don't talk in class","Raise your hand before you speak"],["Take a stroll","Take a deep breath","Get dressed","Brush teeth","Clean clothes","Tie your shoes","Use deodorant","Wash your hair","Eat without complaining","Finish lunch box","Eat healthy","Exercise","Take medication"],["Say something nice to someone","Play outside","Don't be alone during breaks","Regulate emotions","Be assertive"],["Clean your room","Empty dish washer","Throw out trash"]]
     let defaultImage = UIImage(systemName: "photo")
 
     override func awake(withContext context: Any?) {
